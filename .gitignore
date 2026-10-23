@@ -1,0 +1,24 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Cache files & local testing data
+api_cache.json
+*.tmp
+*.log
+
+# Generated test & output files
+citation_check_result.*
+Report_*/
+test_*
+
+# PDFs and spreadsheets
+*.pdf
+*.xlsx
+
+# Environment & IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
