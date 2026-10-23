@@ -1,9 +1,9 @@
 """
 extract_references.py
-Mô-đun trích xuất danh mục tài liệu tham khảo và danh sách tác giả từ bản thảo PDF.
-Hỗ trợ chuẩn hóa Unicode NFC, lọc header/footer trang an toàn, nối DOI bị ngắt dòng,
-xử lý đa định dạng đánh số trích dẫn ([n], n., APA không đánh số, bullet points),
-và trích xuất chính xác danh sách tác giả bản thảo từ trang bìa/trang 1.
+Extracts reference lists and manuscript authors from scientific PDF manuscripts.
+Supports Unicode NFC normalization, safe page header/footer filtering, rejoining split DOIs,
+handles multiple numbering styles ([n], n., APA unnumbered, bullet points),
+and accurately extracts manuscript authors from Page 1.
 """
 
 import os

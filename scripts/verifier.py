@@ -1,13 +1,13 @@
 """
 verifier.py
-Bộ máy kiểm tra, đối chiếu tài liệu tham khảo với CSDL CrossRef, DataCite, arXiv, Europe PMC.
-Phân loại 5 cấp độ:
-  1. VERIFIED: Khớp chính xác bài báo khoa học.
-  2. BOOK_PATENT_DOMESTIC_DOC: Sách, sáng chế, văn bản pháp quy, tạp chí nội địa.
-  3. VERIFIED_WITH_METADATA_ERROR: Bài báo có thật nhưng sai lệch metadata/DOI/năm hoặc lỗi chế bản.
-  4. FABRICATED_CITATION: Giả mạo trích dẫn / AI Hallucination.
-  5. UNVERIFIED_NEEDS_CHECK: Trích dẫn rút gọn thiếu tiêu đề/DOI hoặc công trình mới.
-Đặc biệt: Tích hợp mô-đun phát hiện Tự trích dẫn của tác giả (Author Self-Citation).
+Scholarly reference verification engine cross-referencing CrossRef, DataCite, arXiv, and Europe PMC.
+5-Tier Verification Classification:
+  1. VERIFIED: Exact match confirmed in international database.
+  2. BOOK_PATENT_DOMESTIC_DOC: Monograph, textbook, patent, legal standard, regional journal.
+  3. VERIFIED_WITH_METADATA_ERROR: Genuine work with mismatched DOI, trailing zeroes, wrong year, or layout error.
+  4. FABRICATED_CITATION: Non-existent work / AI Hallucination / Hijacked DOI.
+  5. UNVERIFIED_NEEDS_CHECK: Abbreviated citation lacking title/DOI or newly published work.
+Integrates Author Self-Citation analysis module.
 """
 
 import os
